@@ -24,8 +24,5 @@ jobs:
         env:
           ACCOUNT: ${{ secrets.ACCOUNT }}
           PASSWORD: ${{ secrets.PASSWORD }}
-          ACT2: ${{ secrets.ACT2 }}
-          PSW2: ${{ secrets.PSW2 }}
         run: |
           python3 clock-in.py ${ACCOUNT} ${PASSWORD}
-          python3 clock-in.py ${ACT2} ${PSW2}
